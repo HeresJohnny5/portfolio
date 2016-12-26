@@ -25,9 +25,44 @@ html {
 	/* The text-rendering property provides information to the rendering engine about what to optimize for when rendering text; optimizeLegibility emphasizes legibility over rendering speed */
 }
 
+/********************/
+/* REUSABLE CSS */
+/********************/
+
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+section {
+	padding: 80px 0;
+}
+
+/********************/
+/* PARAGRAPHS CSS */
+/********************/
+
+.hero-text-box p {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.about-text p {
+	line-height: 135%;
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+/********************/
+/* HEADINGS CSS */
+/********************/
+
+h1, 
+h2 {
+	/* The font-size is dependent on the html parent element; 200% of 20px will be 40px */
+	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 h1 {
@@ -35,15 +70,24 @@ h1 {
 	margin-bottom: 20px;
 	color: #fff;
 	font-size: 240%;
-	/* The font-size is dependent on the html parent element; 200% of 20px will be 40px */
-	font-weight: 300;
-	letter-spacing: 1px;
 	word-spacing: 3px;
 }
 
-p {
-	color: #fff;
-	margin-bottom: 20px;
+h2 {
+	margin-bottom: 50px;
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #6fb2c2;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 /********************/
@@ -65,6 +109,10 @@ header {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+/********************/
+/* NAVBAR CSS */
+/********************/
 
 .navbar-custom {
 	background-color: #121d1f;
@@ -122,4 +170,16 @@ header {
 .bnt:active {
 	background-color: #6fb2c2;
 	border: 1px solid transparent;
+}
+
+/********************/
+/* IMAGES CSS */
+/********************/
+
+.about-photo img {
+	width: 20%;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
