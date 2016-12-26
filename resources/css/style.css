@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* The box-sizing propery is used to tell the browser what the sizing properties (width and height) should include; border-box includes content, padding, and border, but not the margin */
 }
 
 html {
@@ -15,6 +16,7 @@ html {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
+	/* The text-rendering property provides information to the rendering engine about what to optimize for when rendering text; optimizeLegibility emphasizes legibility over rendering speed */
 }
 
 .row {
@@ -24,6 +26,18 @@ html {
 
 h1 {
 	margin: 0;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	/* The font-size is dependent on the html parent element; 200% of 20px will be 40px */
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+
+p {
+	color: #fff;
+	margin-bottom: 20px;
 }
 
 /********************/
@@ -31,7 +45,7 @@ h1 {
 /********************/
 
 header {
-	background-image: url(/resources/css/background_images/hero_sunset1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/css/background_images/hero_sunset1.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -43,4 +57,25 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/********************/
+/* BUTTON CSS */
+/********************/
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.bnt:active {
+	background-color: #6fb2c2;
+	border: 1px solid rgba(255, 255, 255, 0);
 }
