@@ -59,7 +59,8 @@ section {
 /********************/
 
 h1, 
-h2 {
+h2, 
+h3 {
 	/* The font-size is dependent on the html parent element; 200% of 20px will be 40px */
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -83,11 +84,23 @@ h2 {
 h2:after {
 	display: block;
 	height: 2px;
-	background-color: #6fb2c2;
 	content: " ";
 	width: 100px;
 	margin: 0 auto;
 	margin-top: 20px;
+}
+
+h3 {
+	font-size: 110%;
+	text-align: center;
+}
+
+.about-header h2:after {
+	background-color: #6fb2c2;
+}
+
+.skills-header h2:after {
+	background-color: #fff;
 }
 
 /********************/
@@ -199,13 +212,24 @@ header {
 }
 
 /********************/
-/* ICONFONTS CSS */
+/* ICONS CSS */
 /********************/
 
-i {
+.about i {
 	font-size: 125%;
 	margin-right: 8px;
 }
+
+.skills i {
+	font-size: 300%;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/********************/
+/* ABOUT CSS */
+/********************/
 
 .about-text a {
 	display: inline-block;
@@ -213,4 +237,12 @@ i {
 
 .about-text p:nth-child(3) {
 	text-align: center;
+}
+
+/********************/
+/* SKILLS CSS */
+/********************/
+
+.skills {
+	background-color: #6fb2c2;
 }
