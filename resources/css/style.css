@@ -155,8 +155,8 @@ header {
 /* BUTTON CSS */
 /********************/
 
-.btn:link,
-.btn:visited {
+.btn-header:link,
+.btn-header:visited {
 	display: inline-block;
 	padding: 10px 30px;
 	text-decoration: none;
@@ -166,10 +166,24 @@ header {
 	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn:hover,
-.bnt:active {
+.btn-header:hover,
+.bnt-header:active {
 	background-color: #6fb2c2;
 	border: 1px solid transparent;
+}
+
+.btn-about:link,
+.btn-about:visited {
+	padding: 10px 30px;
+	text-decoration: none;
+	background-color: #121d1f;
+	color: #fff;
+	transition: background-color 0.2s
+}
+
+.btn-about:hover,
+.btn-header:active {
+	background-color: #6fb2c2;
 }
 
 /********************/
@@ -182,4 +196,21 @@ header {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 30px;
+}
+
+/********************/
+/* ICONFONTS CSS */
+/********************/
+
+i {
+	font-size: 125%;
+	margin-right: 8px;
+}
+
+.about-text a {
+	display: inline-block;
+}
+
+.about-text p:nth-child(3) {
+	text-align: center;
 }
