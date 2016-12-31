@@ -1,5 +1,28 @@
-$(document).ready(function() {
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
+$(document).ready(function () {
+	"use strict";
+	
+	/* Text hover animation on portfolio images */
 	$("#tic_tac_toe").attr("data-content", "Tic Tac Toe");
 	$("#omnifood").attr("data-content", "Omnifood");
 	$("#user_experience").attr("data-content", "User Experience");
+	
+	/* Navigation Scroll */
+	$(function () {
+		$('a[href*="#"]:not([href="#"])').click(function () {
+			if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+	
 });
