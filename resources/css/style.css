@@ -314,6 +314,7 @@ header {
 .skills {
 	background-color: #6fb2c2;
 }
+
 /*.testimonal*/
 
 .img-portfolio {
@@ -380,12 +381,8 @@ cite {
 }
 
 .image img {
-	height: 100%;
+	width: 100%;
 }
-
-
-
-
 
 .image {
     position:relative;
