@@ -104,7 +104,7 @@
 	}
 }
 
-/* */
+/* 481px to 639px */
 @media only screen and (max-width: 480px) {
 	.hero-text-box,
 	.row { padding: 0 5%;	}

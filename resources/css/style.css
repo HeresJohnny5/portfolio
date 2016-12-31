@@ -38,6 +38,10 @@ section {
 	padding: 80px 0;
 }
 
+/********************/
+/* MULTIPURPOSE CSS */
+/********************/
+
 .skills,
 .arrow-home {
 	padding: 40px 0;
@@ -47,9 +51,18 @@ section {
 /* PARAGRAPHS CSS */
 /********************/
 
+.hero-text-box span {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 150%;
+}
+
 .hero-text-box p {
 	color: #fff;
 	margin-bottom: 20px;
+	width: 45%;
+	line-height: 200%;
+	letter-spacing: 1px;
 }
 
 .about-text p {
@@ -57,18 +70,6 @@ section {
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 30px;
-}
-
-.hero-text-box p {
-	width: 45%;
-	line-height: 200%;
-	letter-spacing: 1px;
-}
-
-.hero-text-box span {
-	font-weight: bold;
-	font-style: italic;
-	font-size: 150%;
 }
 
 /********************/
@@ -112,15 +113,15 @@ h2:after {
 	background-color: #6fb2c2;
 }
 
+.skills-header h2:after {
+	background-color: #fff;
+}
+
 .testimonal-header {
 	color: #fff;
 }
 
 .testimonal-header h2:after {
-	background-color: #fff;
-}
-
-.skills-header h2:after {
 	background-color: #fff;
 }
 
@@ -139,6 +140,7 @@ h3 {
 /********************/
 
 header {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1.jpg);
 	background-size: cover;
 	background-position: center;
@@ -151,6 +153,7 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
@@ -180,10 +183,6 @@ header {
 	margin-bottom: 30px;
 }
 
-.social-main li {
-	display: inline-block;
-}
-
 .nav-header a:link,
 .nav-header a:visited,
 .nav-main li a:link,
@@ -192,11 +191,16 @@ header {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 90%;
+	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
 .nav-main li a:hover {
 	color: #6fb2c2;
+}
+
+.social-main li {
+	display: inline-block;
 }
 
 .social-icons a:link,
@@ -210,6 +214,7 @@ header {
 	line-height: 20px;
 	border: 1px solid #121d1f;
 	padding-top: 10%;
+	-webkit-transition: border 0.2s color 0.2s;
 	transition: border 0.2s color 0.2s;
 }
 
@@ -230,6 +235,7 @@ header {
 	padding: 10px 30px;
 	text-decoration: none;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -259,6 +265,7 @@ header {
 	text-decoration: none;
 	background-color: #121d1f;
 	color: #fff;
+	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s
 }
 
@@ -279,105 +286,8 @@ header {
 	margin-bottom: 30px;
 }
 
-/********************/
-/* ICONS CSS */
-/********************/
-
-.about-text i {
-	font-size: 125%;
-	margin-right: 8px;
-}
-
-.skills i {
-	font-size: 300%;
-	display: block;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-/********************/
-/* ABOUT CSS */
-/********************/
-
-.about-text a {
-	display: inline-block;
-}
-
-.about-text p:nth-child(2) {
-	text-align: center;
-}
-
-/********************/
-/* SKILLS CSS */
-/********************/
-
-.skills {
-	background-color: #6fb2c2;
-}
-
-/*.testimonal*/
-
-.img-portfolio {
-	max-height: 100%;
-}
-
 .image {
 	height: 300px;
-}
-
-.testimonal {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	background-attachment: fixed;
-}
-
-blockquote {
-	padding: 2%;
-	font-style: italic;
-	line-height: 145%;
-	color: white;
-}
-
-cite {
-	font-size: 90%;
-	margin-top: 25px;
-	display: block;
-}
-
-.arrow-home p {
-	text-align: center;
-}
-
-.social-icons ul {
-	text-align: center;
-}
-
-.social-icons i {
-	font-size: 150%;
-}
-
-.social-icons li {
-	margin-left: 3%;
-	margin-right: 3%;
-}
-
-
-.social-icons ul:before,
-.social-icons ul:after {
-	background-color: #121d1f;
-	content: " ";
-	display: inline-block;
-	height: 1px;
-	position: relative;
-	vertical-align: middle;
-	width: 15%;
-}
-
-.testimonal-body {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
 }
 
 .image img {
@@ -419,4 +329,95 @@ cite {
 
 .image:hover:after, .image:hover:before {
     opacity:1;
+}
+
+/********************/
+/* ICONS CSS */
+/********************/
+
+.about-text i {
+	font-size: 125%;
+	margin-right: 8px;
+}
+
+.skills i {
+	font-size: 300%;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.social-icons ul {
+	text-align: center;
+}
+
+.social-icons i {
+	font-size: 150%;
+}
+
+.social-icons li {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.social-icons ul:before,
+.social-icons ul:after {
+	background-color: #121d1f;
+	content: " ";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 15%;
+}
+
+/********************/
+/* ABOUT CSS */
+/********************/
+
+.about-text a {
+	display: inline-block;
+}
+
+.about-text p:nth-child(2) {
+	text-align: center;
+}
+
+/********************/
+/* SKILLS CSS */
+/********************/
+
+.skills {
+	background-color: #6fb2c2;
+}
+
+/********************/
+/* TESTIMONALS CSS */
+/********************/
+
+.testimonal {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	background-attachment: fixed;
+}
+
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	color: white;
+}
+
+cite {
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+
+.testimonal-body {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 }

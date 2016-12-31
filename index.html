@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="John Erickson portfolio">
+  <meta name="author" content="John Erickson">
 	
 	<!-- Normalize CSS -->
 	<link rel="stylesheet" href="vendors/ext_css/normalize.css" type="text/css">
@@ -63,7 +63,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus, explicabo nemo ut omnis necessitatibus voluptas! Omnis repellendus iure blanditiis illo quasi qui, necessitatibus, perferendis veritatis suscipit ratione, optio voluptates.</p>
 				<p>
 					<a class="btn-about" href="https://drive.google.com/file/d/0B8HcyAlmnQSBcUlmWElfblVDNjA/view?usp=sharing" target="_blank">
-						<i class="ion-ios-download"></i>
+						<i class="ion-ios-download" aria-hidden="true" title="Download icon for Resume button"></i>
 						Download Resume
 					</a>
 				</p>
@@ -80,22 +80,22 @@
 		
 		<div class="row">
 			<div class="col span-1-of-4">
-				<i class="fa fa-html5" aria-hidden="true"></i>
+				<i class="fa fa-html5" aria-hidden="true" title="HTML5 logo"></i>
 				<h3>HTML5</h3>
 			</div>
 		
 			<div class="col span-1-of-4">
-				<i class="fa fa-css3" aria-hidden="true"></i>
+				<i class="fa fa-css3" aria-hidden="true" title="CSS3 logo"></i>
 				<h3>CSS3</h3>
 			</div>
 
 			<div class="col span-1-of-4">
-				<i class="fa fa-diamond" aria-hidden="true"></i>
+				<i class="fa fa-diamond" aria-hidden="true" title="Ruby logo"></i>
 				<h3>Ruby</h3>
 			</div>
 
 			<div class="col span-1-of-4">
-				<i class="fa fa-github" aria-hidden="true"></i>
+				<i class="fa fa-github" aria-hidden="true" title="Github logo"></i>
 				<h3>Github</h3>
 			</div>
 		</div>
@@ -119,7 +119,7 @@
 			<div class="col span-1-of-2">
 				<a href="https://mytictactoegame.herokuapp.com/" target="_blank">
 					<div id="tic_tac_toe" class="image">
-						<img src="/resources/img/tic_tac_toe.jpg" alt="Tic Tac Toe Game">
+						<img src="/resources/img/tic_tac_toe.jpg" alt="Tic Tac Toe Game portfolio picture">
 					</div>
 				</a>
 			</div>
@@ -136,7 +136,7 @@
 			<div class="col span-1-of-2">
 				<a href="#">
 					<div id="omnifood" class="image">
-						<img src="resources/img/omnifood.jpg" alt="Omnifood App">
+						<img src="resources/img/omnifood.jpg" alt="Omnifood app portfolio picture">
 					</div>
 				</a>
 			</div>
@@ -153,7 +153,7 @@
 			<div class="col span-1-of-2">
 				<a href="#">
 					<div id="user_experience" class="image">
-						<img src="/resources/img/wireframe.jpg">
+						<img src="/resources/img/wireframe.jpg" alt="Run Smart app wireframe portfolio picture">
 					</div>
 				</a>
 			</div>	
@@ -190,29 +190,41 @@
 	</section>
 	
 	<section class="arrow-home">
-		<p>
+		<h3>
 			<a class="btn-home" href="#">
-				<i class="ion-ios-arrow-up"></i>
+				<i class="ion-ios-arrow-up" aria-hidden="true" title="Arrow icon to go back to the top of the page"></i>
 			</a>
-		</p>
+		</h3>
 	</section>
 	
 	<section class="social-icons">
 		<div class="row">
 			<div class="social-main">
 				<ul>
-					<li><a href="https://www.facebook.com/johnerickson08" target="_blank"><i class="ion-social-facebook"></i></a></li>
-					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+					<li><a href="https://www.facebook.com/johnerickson08" target="_blank"><i class="ion-social-facebook" aria-hidden="true" title="John Erickson Facebook link"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter" aria-hidden="true" title="John Erickson Twitter link"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus" aria-hidden="true" title="John Erickson Google Plus link"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/john-erickson-70b3715
-" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-					<li><a href="https://github.com/HeresJohnny5" target="_blank"><i class="ion-social-github"></i></a></li>
+" target="_blank"><i class="ion-social-linkedin" aria-hidden="true" title="John Erickson LinkedIn link"></i></a></li>
+					<li><a href="https://github.com/HeresJohnny5" target="_blank"><i class="ion-social-github" aria-hidden="true" title="John Erickson Github link"></i></a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	
+	<!-- jquery -->
 	<script src="vendors/ext_js/jquery.js"></script>
+	
+	<!-- Enables the browser to understand/execute CSS media queries -->
+	<script src="vendors/ext_js/respond.min%20copy.js"></script>
+	
+	<!-- Enables you to use and style HTML5 elements in older browsers -->
+	<script src="vendors/ext_js/html5shiv.min%20copy.js"></script>
+	
+	<!-- Enables you to use CSS pseudo classes on Internet Explorer 6, 7, and 8 -->
+	<script src="vendors/ext_js/selectivizr.min%20copy.js"></script>
+
+	<!-- Custom CSS - Portfolio text -->
 	<script src="resources/js/app.js"></script>
 </body>
 </html>
