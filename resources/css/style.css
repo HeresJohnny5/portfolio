@@ -199,30 +199,6 @@ header {
 	color: #6fb2c2;
 }
 
-.social-main li {
-	display: inline-block;
-}
-
-.social-icons a:link,
-.social-icons a:visited {
-	text-decoration: none;
-	color: #121d1f;
-	border-radius: 100%;
-	height: 40px;
-	width: 40px;
-	display: block;
-	line-height: 20px;
-	border: 1px solid #121d1f;
-	padding-top: 10%;
-	-webkit-transition: border 0.2s color 0.2s;
-	transition: border 0.2s color 0.2s;
-}
-
-.social-icons a:hover {
-	border: 1px solid #6fb2c2;
-	color: #6fb2c2;
-}
-
 /********************/
 /* BUTTON CSS */
 /********************/
@@ -358,6 +334,55 @@ header {
 .social-icons li {
 	margin-left: 3%;
 	margin-right: 3%;
+}
+
+.social-main li {
+	display: inline-block;
+}
+
+.social-icons a:link,
+.social-icons a:visited {
+	text-decoration: none;
+	color: #121d1f;
+	border-radius: 100%;
+	height: 40px;
+	width: 40px;
+	display: block;
+	line-height: 20px;
+	border: 1px solid #121d1f;
+	padding-top: 10%;
+	-webkit-transition: border 0.2s color 0.2s;
+	transition: border 0.2s color 0.2s;
+}
+
+.social-icons .facebook:hover {
+	background-color: #3b5998;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.social-icons .twitter:hover {
+	background-color: #55acee;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.social-icons .google-plus:hover {
+	background-color: #dd4b39;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.social-icons .linkedin:hover {
+	background-color: #007bb5;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.social-icons .github:hover {
+	background-color: #000;
+	border: 1px solid #fff;
+	color: #fff;
 }
 
 .social-icons ul:before,
