@@ -140,8 +140,8 @@ h3 {
 /********************/
 
 header {
-	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1.jpg);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1.jpg);
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -421,8 +421,8 @@ header {
 /********************/
 
 .testimonal {
-	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1.jpg);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1.jpg);
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 600px;
