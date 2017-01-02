@@ -132,8 +132,11 @@ h3 {
 
 .portfolio h3 {
 	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	font-weight: 400;
 }
+
+.portfolio p { line-height: 125%; }
 
 /********************/
 /* HEADER CSS */
@@ -414,6 +417,23 @@ header {
 
 .skills {
 	background-color: #6fb2c2;
+}
+
+/********************/
+/* PORTFOLIO CSS */
+/********************/
+
+.portfolio a:link,
+.portfolio a:visited {
+	text-decoration: none;
+	color: #555;
+	font-weight: 400;
+	border-bottom: 2px solid #fff;
+	transition: border-bottom 0.2s;
+}
+
+.portfolio a:hover {
+	border-bottom: 2px solid #555;
 }
 
 /********************/
