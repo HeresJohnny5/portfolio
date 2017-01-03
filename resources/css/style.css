@@ -110,21 +110,13 @@ h2:after {
 }
 
 .about-header h2:after,
-.portfolio-header h2:after {
-	background-color: #6fb2c2;
-}
+.portfolio-header h2:after { background-color: #6fb2c2; }
 
-.skills-header h2:after {
-	background-color: #fff;
-}
+.skills-header h2:after { background-color: #fff; }
 
-.testimonal-header {
-	color: #fff;
-}
+.testimonal-header { color: #fff; }
 
-.testimonal-header h2:after {
-	background-color: #fff;
-}
+.testimonal-header h2:after { background-color: #fff; }
 
 h3 {
 	font-size: 110%;
@@ -144,6 +136,8 @@ h3 {
 /********************/
 
 header {
+	background-color: #1b2a2e;
+	/* This is in case the background picture doesn't load */
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
 	background-size: cover;
@@ -165,9 +159,7 @@ header {
 /* NAVBAR CSS */
 /********************/
 
-.navbar-custom {
-	background-color: #121d1f;
-}
+.navbar-custom { background-color: #121d1f; }
 
 .nav-header {
 	float: left;
@@ -199,9 +191,7 @@ header {
 	transition: color 0.2s;
 }
 
-.nav-main li a:hover {
-	color: #6fb2c2;
-}
+.nav-main li a:hover { color: #6fb2c2; }
 
 /********************/
 /* BUTTON CSS */
@@ -250,9 +240,7 @@ header {
 }
 
 .btn-about:hover,
-.btn-header:active {
-	background-color: #6fb2c2;
-}
+.btn-header:active { background-color: #6fb2c2; }
 
 /********************/
 /* IMAGES CSS */
@@ -266,13 +254,9 @@ header {
 	margin-bottom: 30px;
 }
 
-.image {
-	height: 300px;
-}
+.image { height: 300px; }
 
-.image img {
-	width: 100%;
-}
+.image img { width: 100%; }
 
 .image {
     position:relative;
@@ -307,9 +291,7 @@ header {
     -moz-box-sizing:border-box;
 }
 
-.image:hover:after, .image:hover:before {
-    opacity:1;
-}
+.image:hover:after, .image:hover:before { opacity:1; }
 
 /********************/
 /* ICONS CSS */
@@ -327,22 +309,16 @@ header {
 	margin-bottom: 10px;
 }
 
-.social-icons ul {
-	text-align: center;
-}
+.social-icons ul { text-align: center; }
 
-.social-icons i {
-	font-size: 150%;
-}
+.social-icons i { font-size: 150%; }
 
 .social-icons li {
 	margin-left: 3%;
 	margin-right: 3%;
 }
 
-.social-main li {
-	display: inline-block;
-}
+.social-main li { display: inline-block; }
 
 .social-icons a:link,
 .social-icons a:visited {
@@ -404,21 +380,15 @@ header {
 /* ABOUT CSS */
 /********************/
 
-.about-text a {
-	display: inline-block;
-}
+.about-text a { display: inline-block; }
 
-.about-text p:last-child {
-	text-align: center;
-}
+.about-text p:last-child { text-align: center; }
 
 /********************/
 /* SKILLS CSS */
 /********************/
 
-.skills {
-	background-color: #6fb2c2;
-}
+.skills { background-color: #6fb2c2; }
 
 /********************/
 /* PORTFOLIO CSS */
@@ -433,15 +403,15 @@ header {
 	transition: border-bottom 0.2s;
 }
 
-.portfolio a:hover {
-	border-bottom: 2px solid #555;
-}
+.portfolio a:hover { border-bottom: 2px solid #555; }
 
 /********************/
 /* TESTIMONALS CSS */
 /********************/
 
 .testimonal {
+	background-color: #040809; 
+	/* This is in case the background picture doesn't load */
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
 	background-size: cover;
@@ -478,6 +448,4 @@ cite {
 	animation-duration: 1s;
 }
 
-.js--wp-1.animated {
-	opacity: 1;
-}
+.js--wp-1.animated { opacity: 1; }
