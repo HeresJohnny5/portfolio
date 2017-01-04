@@ -34,7 +34,7 @@ html {
 	margin: 0 auto;
 }
 
-section {
+section, footer {
 	padding: 80px 0;
 }
 
@@ -135,7 +135,7 @@ h3 {
 /* HEADER CSS */
 /********************/
 
-header {
+.hero-main {
 	background-color: #1b2a2e;
 	/* This is in case the background picture doesn't load */
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
