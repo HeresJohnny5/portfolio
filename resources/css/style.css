@@ -77,8 +77,8 @@ section, footer {
 /* HEADINGS CSS */
 /********************/
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
 	/* The font-size is dependent on the html parent element; 200% of 20px will be 40px */
 	font-weight: 300;
@@ -138,7 +138,7 @@ h3 {
 .hero-main {
 	background-color: #1b2a2e;
 	/* This is in case the background picture doesn't load */
-	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/resources/css/background_images/hero_sunset1-min.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
 	background-size: cover;
 	background-position: center;
@@ -376,6 +376,12 @@ h3 {
 	width: 15%;
 }
 
+#social-options a:hover {
+	-webkit-animation: rotate-center 0.8s ease-in-out both;
+	-moz-animation: rotate-center 0.8s ease-in-out both;
+	animation: rotate-center 0.8s ease-in-out both;
+}
+
 /********************/
 /* ABOUT CSS */
 /********************/
@@ -410,7 +416,7 @@ h3 {
 /********************/
 
 .testimonal {
-	background-color: #040809; 
+	background-color: #040809;
 	/* This is in case the background picture doesn't load */
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
@@ -431,11 +437,6 @@ cite {
 	font-size: 90%;
 	margin-top: 25px;
 	display: block;
-}
-
-.testimonal-body {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
 }
 
 /********************/
