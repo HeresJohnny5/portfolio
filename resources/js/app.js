@@ -8,6 +8,8 @@ $(document).ready(function () {
 	$("#tic_tac_toe").attr("data-content", "Tic Tac Toe");
 	$("#omnifood").attr("data-content", "Omnifood");
 	$("#user_experience").attr("data-content", "User Experience");
+	$("#color_guessing_game").attr("data-content", "Color Guessing Game");
+	$("#todo_list").attr("data-content", "To-Do List");
 	
 	/* Navigation Scroll */
 	$(function () {
