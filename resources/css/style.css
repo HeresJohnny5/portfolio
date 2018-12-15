@@ -342,7 +342,7 @@ h3 {
 }
 
 .social-icons .codepen:hover {
-	background-color: #27ae60;
+	background-color: #000;
 	border: 1px solid #fff;
 	color: #fff;
 }
@@ -355,6 +355,12 @@ h3 {
 
 .social-icons .github:hover {
 	background-color: #000;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.social-icons .freecodecamp:hover {
+	background-color: #006400;
 	border: 1px solid #fff;
 	color: #fff;
 }
