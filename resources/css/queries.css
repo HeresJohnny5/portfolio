@@ -38,7 +38,7 @@
 	
 	.image:before { bottom: 45%; }
 	
-	.portfolio h3 { margin-bottom: 15px; }
+	.portfolio h3 { margin-bottom: 15px; }	
 }
 
 /* 481px to 767px */
@@ -93,6 +93,8 @@
 	.social-icons ul:after { width: 10%; }
 	
 	.skills i { font-size: 225%; }
+
+	#portfolio article { border-bottom: none; }
 }
 
 /* 481px to 640px */

@@ -335,12 +335,6 @@ h3 {
 	transition: border 0.2s color 0.2s;
 }
 
-.social-icons .facebook:hover {
-	background-color: #3b5998;
-	border: 1px solid #fff;
-	color: #fff;
-}
-
 .social-icons .twitter:hover {
 	background-color: #55acee;
 	border: 1px solid #fff;
@@ -400,12 +394,17 @@ h3 {
 /* PORTFOLIO CSS */
 /********************/
 
+#portfolio article { border-bottom: 1px solid #d5d5d5; }
+
+#portfolio article:last-of-type { border-bottom: none; }
+
 .portfolio a:link,
 .portfolio a:visited {
 	text-decoration: none;
 	color: #555;
 	font-weight: 400;
 	border-bottom: 2px solid #fff;
+	margin-right: .5em;
 	transition: border-bottom 0.2s;
 }
 
