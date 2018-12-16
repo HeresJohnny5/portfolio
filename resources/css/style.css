@@ -9,18 +9,18 @@
 /********************/
 
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 	/* The box-sizing propery is used to tell the browser what the sizing properties (width and height) should include; border-box includes content, padding, and border, but not the margin */
+	margin: 0;
+	padding: 0;
 }
 
 html {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Lato', 'Arial', sans-serif;
-	font-weight: 300;
 	font-size: 20px;
+	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	/* The text-rendering property provides information to the rendering engine about what to optimize for when rendering text; optimizeLegibility emphasizes legibility over rendering speed */
 }
@@ -30,8 +30,8 @@ html {
 /********************/
 
 .row {
-	max-width: 1140px;
 	margin: 0 auto;
+	max-width: 1140px;
 }
 
 section, footer {
@@ -52,25 +52,25 @@ section, footer {
 /********************/
 
 .hero-text-box span {
-	font-weight: bold;
-	font-style: italic;
 	font-size: 150%;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .hero-text-box p {
 	color: #fff;
+	letter-spacing: 1px;
+	line-height: 200%;
 	margin-bottom: 20px;
 	width: 45%;
-	line-height: 200%;
-	letter-spacing: 1px;
 }
 
 .about-text p {
-	text-align: left;
 	line-height: 135%;
-	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 25px;
+	text-align: left;
+	width: 60%;
 }
 
 /********************/
@@ -86,27 +86,27 @@ h3 {
 }
 
 h1 {
-	margin: 0;
-	margin-bottom: 20px;
 	color: #fff;
 	font-size: 240%;
+	margin: 0;
+	margin-bottom: 20px;
 	word-spacing: 3px;
 }
 
 h2 {
-	margin-bottom: 50px;
 	font-size: 180%;
-	word-spacing: 2px;
+	margin-bottom: 50px;
 	text-align: center;
+	word-spacing: 2px;
 }
 
 h2:after {
+	content: " ";
 	display: block;
 	height: 2px;
-	content: " ";
-	width: 100px;
 	margin: 0 auto;
 	margin-top: 20px;
+	width: 100px;
 }
 
 .about-header h2:after,
@@ -114,9 +114,9 @@ h2:after {
 
 .skills-header h2:after { background-color: #fff; }
 
-.testimonal-header { color: #fff; }
+.recommendations-header { color: #fff; }
 
-.testimonal-header h2:after { background-color: #fff; }
+.recommendations-header h2:after { background-color: #fff; }
 
 h3 {
 	font-size: 110%;
@@ -124,9 +124,9 @@ h3 {
 }
 
 .portfolio h3 {
-	text-align: left;
-	margin-bottom: 10px;
 	font-weight: 400;
+	margin-bottom: 10px;
+	text-align: left;	
 }
 
 .portfolio p { line-height: 125%; }
@@ -136,21 +136,21 @@ h3 {
 /********************/
 
 .hero-main {
+	background-attachment: fixed;
 	background-color: #1b2a2e;
 	/* This is in case the background picture doesn't load */
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/resources/css/background_images/hero_sunset1-min.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/resources/css/background_images/hero_sunset1-min.jpg);
-	background-size: cover;
 	background-position: center;
+	background-size: cover;
 	height: 100vh;
-	background-attachment: fixed;
 }
 
 .hero-text-box {
-	position: absolute;
-	width: 1140px;
-	top: 50%;
 	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: 1140px;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
@@ -163,8 +163,8 @@ h3 {
 
 .nav-header {
 	float: left;
-	margin-top: 30px;
 	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .nav-main {
@@ -175,18 +175,18 @@ h3 {
 
 .nav-main li {
 	display: inline-block;
-	margin-left: 30px;
 	margin-bottom: 30px;
+	margin-left: 30px;
 }
 
 .nav-header a:link,
 .nav-header a:visited,
 .nav-main li a:link,
 .nav-main li a:visited {
-	text-decoration: none;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 90%;
+	text-decoration: none;
+	text-transform: uppercase;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
@@ -201,24 +201,24 @@ h3 {
 .btn-header:visited,
 .btn-home:link,
 .btn-home:visited {
+	border-radius: 200px;
 	display: inline-block;
 	padding: 10px 30px;
 	text-decoration: none;
-	border-radius: 200px;
 	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-header:link,
 .btn-header:visited {
-	color: #fff;
 	border: 1px solid #fff;
+	color: #fff;
 }
 
 .btn-home:link,
 .btn-home:visited {
-	color: #121d1f;
 	border: 1px solid #121d1f;
+	color: #121d1f;
 }
 
 .btn-header:hover,
@@ -231,10 +231,10 @@ h3 {
 
 .btn-about:link,
 .btn-about:visited {
-	padding: 10px 30px;
-	text-decoration: none;
 	background-color: #121d1f;
 	color: #fff;
+	padding: 10px 30px;
+	text-decoration: none;
 	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s
 }
@@ -247,11 +247,11 @@ h3 {
 /********************/
 
 .about-photo img {
-	width: 20%;
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 30px;
+	width: 20%;
 }
 
 .image { height: 300px; }
@@ -259,36 +259,36 @@ h3 {
 .image img { width: 100%; }
 
 .image {
-    position:relative;
-    font-size:24px;
+	font-size:24px;
+  position:relative;  
 }
 
 .image:after,
 .image:before {
-    position:absolute;
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+	opacity:0;
+	position:absolute;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 
 .image:after {
-    content:'\A';
-    width:100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
+	background:rgba(0,0,0,0.6);
+	content:'\A';
+	top:0; left:0;
+	width:100%; height:100%;
 }
 
 .image:before {
-    content: attr(data-content);
-    font-size: 20px;
-    width:100%;
-    color:#fff;
-    z-index:1;
-    bottom:45%;
-    font-weight: bold;
-    text-align:center;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
+	bottom:45%;
+	color:#fff;
+	content: attr(data-content);
+	font-size: 20px;
+	font-weight: bold;
+	text-align:center;
+	width:100%;
+	z-index:1;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 }
 
 .image:hover:after, .image:hover:before { opacity:1; }
@@ -303,10 +303,10 @@ h3 {
 }
 
 .skills i {
-	font-size: 300%;
 	display: block;
-	text-align: center;
+	font-size: 300%;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .social-icons ul { text-align: center; }
@@ -322,15 +322,15 @@ h3 {
 
 .social-icons a:link,
 .social-icons a:visited {
-	text-decoration: none;
-	color: #121d1f;
-	border-radius: 100%;
-	height: 40px;
-	width: 40px;
-	display: block;
-	line-height: 20px;
 	border: 1px solid #121d1f;
+	border-radius: 100%;
+	color: #121d1f;
+	display: block;
+	height: 40px;
+	line-height: 20px;
 	padding-top: 10%;
+	text-decoration: none;
+	width: 40px;
 	-webkit-transition: border 0.2s color 0.2s;
 	transition: border 0.2s color 0.2s;
 }
@@ -406,42 +406,42 @@ h3 {
 
 .portfolio a:link,
 .portfolio a:visited {
-	text-decoration: none;
+	border-bottom: 2px solid #fff;
 	color: #555;
 	font-weight: 400;
-	border-bottom: 2px solid #fff;
 	margin-right: .5em;
+	text-decoration: none;
 	transition: border-bottom 0.2s;
 }
 
 .portfolio a:hover { border-bottom: 2px solid #555; }
 
 /********************/
-/* TESTIMONALS CSS */
+/* RECOMMENDATIONS CSS */
 /********************/
 
-.testimonal {
+.recommendations {
+	background-attachment: fixed;
 	background-color: #040809;
 	/* This is in case the background picture doesn't load */
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/resources/css/background_images/testimonal_background1-min.jpg);
-	background-size: cover;
 	background-position: center;
+	background-size: cover;
 	height: 600px;
-	background-attachment: fixed;
 }
 
 blockquote {
+	color: white;
 	padding: 2%;
 	font-style: italic;
 	line-height: 145%;
-	color: white;
 }
 
 cite {
+	display: block;
 	font-size: 90%;
 	margin-top: 25px;
-	display: block;
 }
 
 /********************/
