@@ -16,7 +16,7 @@ const nextSlide = () => {
   }
 
   setTimeout(() => current.classList.remove('current'));
-}
+};
 
 const prevSlide = () => {
   const current = document.querySelector('.current');
@@ -29,4 +29,12 @@ const prevSlide = () => {
   }
 
   setTimeout(() => current.classList.remove('current'));
-}
+};
+
+next.addEventListener('click', e => {
+  nextSlide();
+});
+
+prev.addEventListener('click', e => {
+  prevSlide();
+})
