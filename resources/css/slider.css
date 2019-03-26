@@ -80,6 +80,18 @@ html {
 	top: 50%;
 }
 
+@media(max-width: 500px) {
+	.slide .content {
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+	}
+
+	.slide.current .content {
+		transform: translateY(-300px);
+	}
+}
+
 .slide:first-child {
 	background: url('https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80') no-repeat center center/cover;
 }
