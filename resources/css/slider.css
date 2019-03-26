@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	/* The box-sizing propery is used to tell the browser what the sizing properties (width and height) should include; border-box includes content, padding, and border, but not the margin */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #333;
+	color: #fff;
+	line-height: 1.6;
+}
+
+.slider {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+}
+
+.slide {
+	left: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
