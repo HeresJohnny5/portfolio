@@ -47,11 +47,11 @@ section, footer {
 	padding: 40px 0;
 }
 
-#skills .col {
+.skills-row .col {
   text-align: center;
 }
 
-#skills img {
+.skills-row img {
   width: 33.3%;
 }
 
