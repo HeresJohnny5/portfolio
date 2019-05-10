@@ -394,7 +394,14 @@ h3 {
 /* ABOUT CSS */
 /********************/
 
-.about-text a { display: inline-block; }
+.about-text a {
+  display: inline-block; 
+}
+
+.about-inline-anchor {
+  color: #555;
+  font-style: italic;
+}
 
 .about-text p:last-child { text-align: center; }
 
