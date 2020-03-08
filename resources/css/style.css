@@ -81,6 +81,18 @@ section, footer {
 	width: 60%;
 }
 
+.about-text a {
+  border-bottom: 2px solid #fff;
+	color: #555;
+	font-weight: 400;
+	text-decoration: none;
+	transition: border-bottom 0.2s;
+}
+
+.about-text a:hover {
+  border-bottom: 2px solid #555;
+}
+
 /********************/
 /* HEADINGS CSS */
 /********************/
